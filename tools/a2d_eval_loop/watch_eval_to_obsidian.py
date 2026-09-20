@@ -103,6 +103,11 @@ def report(batch, vault, owner_alive=True):
         atomic(vault/'00_自动测试报告索引.md','# 自动测试报告\n\n每个批次独立更新；完成或中断时保存最终已落盘结果。\n\n'+'\n'.join(f'- [[{p.stem}]]' for p in sorted(vault.glob('自动报告_*.md')))+'\n')
     snapshot=dict(updated_at=now,state=state,owner_alive=owner_alive,complete=complete,recorded=len(records),planned=len(expected),warnings=warnings,rows=rows,evidence=evidence,partial_samples=partial,obsidian_note=str(vault/note))
     atomic(batch/'auto_report_status.json',json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n')
+    if complete or not owner_alive or state in ('暂停','异常停止／未完成','采集结束／等待确认'):
+        import sys
+        sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'dashboard'))
+        from export_report import export_report
+        export_report(batch,batch/'static_report')
     return snapshot
 
 def main():

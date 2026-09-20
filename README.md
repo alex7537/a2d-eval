@@ -33,3 +33,21 @@ python3 tools/a2d_eval_loop/watch_eval_to_obsidian.py --help
 ## 迁入来源
 
 来自 `alex7537/flow-matching-test-a2d-v2` 的测评工作树，具体源commit及文件哈希见 [PROVENANCE.json](PROVENANCE.json)。包含本地已验证的暂停快照排除修复；未导入运行结果和机器凭证。
+
+## 本地可视化看板
+
+```bash
+python3 dashboard/server.py --results /path/to/test-result --port 8765
+```
+
+浏览器访问 `http://127.0.0.1:8765`。按批次、场景、模型、方法筛选；点击行查看参数、失败现象和基础设施异常。每30秒刷新，只读日志，不发送仿真RPC。默认接入两批主测试及近期RDT/初始化对照，不宣称覆盖全部历史。远程IDE可转发8765端口。
+
+失败分类优先采用与回合计数吻合的逐步审计；缺少证据显示待审计。基础设施异常不计为抓取失败。不同批次不合并成功率。标准库Python服务，无前端构建依赖。
+
+```bash
+python3 -m unittest discover -s dashboard/tests -v
+```
+
+## 静态结果交付
+
+测试终态由 observer 导出独立静态目录；同事复制后部署即可。[导出与部署说明](dashboard/README.md)。不自动推送远端。
