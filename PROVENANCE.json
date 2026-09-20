@@ -1,0 +1,20 @@
+{
+  "repository": "alex7537/flow-matching-test-a2d-v2",
+  "source_commit": "555f5217b913937c6efe83302b1de419a3141cca",
+  "source_branch": "feat/a2d-eval-loop-v0",
+  "local_changes_included": [
+    "watch_eval_to_obsidian.py explicit scene selection",
+    "tests/test_auto_report.py regression coverage"
+  ],
+  "files": {
+    "tools/a2d_eval_loop/README.md": "fb2a5d36d2dac7eec44188ec47fdf143a23e7624b6890d38a5d118d6a690f006",
+    "tools/a2d_eval_loop/loop.py": "df5dfc902645149f4bce278860d66bd115aaa438b4f626df0378894d8c4df79c",
+    "tools/a2d_eval_loop/watch_eval_to_obsidian.py": "56b927c867ff19a07a38c96846fc77c24f0aa749d63783a23125261c7b2f7792",
+    "tools/a2d_eval_loop/watch.py": "c725d613363eca89c7206127e10f7653fd23f3467dcf6cb392c4f174c3632ed2",
+    "tools/a2d_eval_loop/.gitignore": "1c1c37ef740299a8d9eefa610d2ccf3c33ff9e7a64444e394df3aaa9fdb0e4da",
+    "tools/a2d_eval_loop/docs/OPEN_SOURCE_PATTERNS.md": "f3f82ced0274cd821343d59f7f62a84e24adad740d5a6c59ee0357ec069638ac",
+    "tools/a2d_eval_loop/docs/AUTO_REPORT.md": "44fcac920406b7e281d7ee25a02c84b13daf9763b4040e58f98e4ac00c4c1150",
+    "tools/a2d_eval_loop/tests/test_auto_report.py": "af08f4570e154538ee8e7376c6b183edcbd02090532a7055ee686e7f4f20be99",
+    "tools/a2d_eval_loop/tests/test_loop.py": "65feafea75c616cf52d8ca2298e4c40bce26ec68d845c1bfe435148f51f41d37"
+  }
+}
