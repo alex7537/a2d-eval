@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-09-20T21:29:57+08:00",
+  "runs": [
+    {
+      "id": "rdt_archive_100_20260920/box/rdt170m latest raw step100000",
+      "batch": "rdt_archive_100_20260920",
+      "scene": "box",
+      "state": "已完成",
+      "groups": [
+        {
+          "scene": "box",
+          "model": "rdt170m latest raw step100000",
+          "attempts": 50,
+          "valid": 49,
+          "successes": 6,
+          "invalid": 1,
+          "failure_observations": {
+            "从未满足多指接触": 35,
+            "高度接触从未同时满足": 3,
+            "接触但高度未达5cm": 5
+          },
+          "label": "rdt170m latest raw step100000",
+          "mode": "report",
+          "method": "Step+GT+contact",
+          "planned": 50,
+          "rate": 0.12244897959183673,
+          "failures": {
+            "从未满足多指接触": 35,
+            "高度接触从未同时满足": 3,
+            "接触但高度未达5cm": 5
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": null
+        }
+      ],
+      "warnings": [
+        "部署诊断：在线预处理 parity 尚未完全验证；不作为严格模型排名"
+      ],
+      "updated_at": "2026-09-20T21:29:57+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "thumb+2other fingers>1e-4N and lift>=.05m for5 consecutive observations",
+        "layout_replay": false,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      }
+    },
+    {
+      "id": "rdt_archive_100_20260920/bottle/rdt170m latest raw step100000",
+      "batch": "rdt_archive_100_20260920",
+      "scene": "bottle",
+      "state": "已完成",
+      "groups": [
+        {
+          "scene": "bottle",
+          "model": "rdt170m latest raw step100000",
+          "attempts": 50,
+          "valid": 47,
+          "successes": 4,
+          "invalid": 3,
+          "failure_observations": {
+            "从未满足多指接触": 33,
+            "接触但高度未达5cm": 6,
+            "高度接触从未同时满足": 2,
+            "同时满足但连续不足5次": 2
+          },
+          "label": "rdt170m latest raw step100000",
+          "mode": "report",
+          "method": "Step+GT+contact",
+          "planned": 50,
+          "rate": 0.0851063829787234,
+          "failures": {
+            "从未满足多指接触": 33,
+            "接触但高度未达5cm": 6,
+            "高度接触从未同时满足": 2,
+            "同时满足但连续不足5次": 2
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": null
+        }
+      ],
+      "warnings": [
+        "部署诊断：在线预处理 parity 尚未完全验证；不作为严格模型排名"
+      ],
+      "updated_at": "2026-09-20T21:29:57+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "thumb+2other fingers>1e-4N and lift>=.05m for5 consecutive observations",
+        "layout_replay": false,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      }
+    }
+  ],
+  "scope": "静态结果快照 · 与随附报告一致"
+}

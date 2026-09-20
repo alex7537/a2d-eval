@@ -1,0 +1,14 @@
+{
+  "box": {
+    "plan.json": "10cdba53b50db1f8f00a6df3256d57948240e85eb68961e00b972d0fe71ca75b",
+    "episodes.jsonl": "ae5b7ba4a1c8bb6c332d44444ec8005a515bc4a897ef1cd113b4991a6be05a1b",
+    "REPORT.md": "8c4ef057d5ee16473669beb95c414338970017653f556feeb56c07252c782c2b",
+    "failure_summary.json": "ad5ba8e0ee32ea3468cc757f7317593718b745fc65db23bfbbfa9e5e063b6594"
+  },
+  "bottle": {
+    "plan.json": "21fd9660f3148f00428159e66335d95000064f2e31bc44bb3bb177929cdd4d05",
+    "episodes.jsonl": "b70eab600c2d54acc74e4d50d1a12f8f58dff7ded6195ed0df5cb1b183aba5a2",
+    "REPORT.md": "ca0c2c476403ed8b5c56af8071d91a300b86aa9223df10278d716bf74c26efea",
+    "failure_summary.json": "1a105d55e67f023a08ce290e501a44ae10b785ad16788386b48d05c40bcfebd8"
+  }
+}
