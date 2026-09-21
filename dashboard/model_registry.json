@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "links": [
+    {
+      "training_run_id": "62btgn39",
+      "checkpoint_role": "latest_raw",
+      "bundle_sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117",
+      "evaluation_batches": [
+        "dp_imle_cfm_latest_two_scenes_100each_20260917_214355",
+        "four_latest_step_gt_100each_20260916_162515"
+      ]
+    },
+    {
+      "training_run_id": "hbvi2tvt",
+      "checkpoint_role": "latest_raw",
+      "bundle_sha256": "13d6db49752a89dfdab93ee77481835300ac412b2b37fd142b27951d028ad3b7",
+      "evaluation_batches": ["dp_imle_cfm_latest_two_scenes_100each_20260917_214355"]
+    },
+    {
+      "training_run_id": "y8aum0x2",
+      "checkpoint_role": "latest_raw",
+      "bundle_sha256": "f1e537b09f9be8e5b83a387ff51f19345f47dc79087133328cfc0836c4771645",
+      "evaluation_batches": ["dp_imle_cfm_latest_two_scenes_100each_20260917_214355"]
+    },
+    {
+      "training_run_id": "wken5vqr",
+      "checkpoint_role": "latest_raw",
+      "bundle_sha256": "6c139c2bf27780e9a4e29d77f5534343674dbfb5bf235e858b46e59351957399",
+      "evaluation_batches": ["four_latest_step_gt_100each_20260916_162515"]
+    },
+    {
+      "training_run_id": "jpb1vfb4",
+      "checkpoint_role": "latest_raw",
+      "bundle_sha256": "3cbf1d23c2cdd5bdd441288bc297c4407ee545a78064089a71563ecefd47f7d0",
+      "evaluation_batches": ["four_latest_step_gt_100each_20260916_162515"]
+    },
+    {
+      "training_run_id": "kp1bshcr",
+      "checkpoint_role": "latest_raw",
+      "bundle_sha256": "f524ccddf5fdf7c709086a69e97f69d8a93087c25d8d29349f9e5d29e5fd5688",
+      "evaluation_batches": ["four_latest_step_gt_100each_20260916_162515"]
+    },
+    {
+      "training_run_id": "lwdu6ak8",
+      "checkpoint_role": "latest_raw",
+      "checkpoint_step": 100000,
+      "evaluation_selectors": [
+        {
+          "model": "rdt170m latest raw step100000",
+          "batch": "rdt_fixed_box_50_20260920_171335"
+        },
+        {
+          "model": "rdt170m latest raw step100000",
+          "batch": "rdt_fixed_bottle_50_20260920_171335"
+        }
+      ],
+      "note": "RDT historical report did not preserve bundle SHA; selector is explicit and limited to repaired batches."
+    }
+  ]
+}

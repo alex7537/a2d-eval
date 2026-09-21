@@ -5,6 +5,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 STATIC = Path(__file__).parent / 'static'
+TRAINING_RUNS = Path(__file__).parent / 'training_runs.json'
+MODEL_REGISTRY = Path(__file__).parent / 'model_registry.json'
 LABELS = {'dp_latest':'DP spatial49','imle_latest':'IMLE spatial49','cfm_latest':'CFM spatial49','cfm_patch49_latest':'CFM spatial49','cfm_cls_latest':'CFM CLS','cfm_pro5000_latest':'CFM PRO5000','wan_latest':'Joint WAM'}
 MODES = {'step_gt':'逐步 RPC＋GT','step':'逐步 RPC','batch16':'合并16动作','Step+GT+contact':'逐步 RPC＋GT'}
 
@@ -68,6 +70,51 @@ def aggregate(folder, audit=None):
         if not pid or not Path('/proc',str(pid)).exists():state='unverified'
     return dict(id=str(folder),batch=folder.parent.name if folder.name in ('box','bottle') else folder.name,scene=plan.get('scene',folder.name),state=state,groups=groups,warnings=warnings,protocol=dict(horizon=plan.get('horizon'),max_steps=plan.get('max_steps'),policy_seed=plan.get('policy_seed'),metric=plan.get('metric','未记录'),layout_replay=plan.get('layout_replay',False),limitations=plan.get('limitations',[])),updated_at=datetime.datetime.fromtimestamp((folder/'episodes.jsonl').stat().st_mtime).astimezone().isoformat(timespec='seconds') if (folder/'episodes.jsonl').exists() else None)
 
+def attach_training_runs(runs, training_path=TRAINING_RUNS, registry_path=MODEL_REGISTRY):
+    training=read(Path(training_path),{'runs':[]})
+    registry=read(Path(registry_path),{'links':[]})
+    records={row.get('wandb_run_id'):dict(row,checkpoints=[]) for row in training.get('runs',[]) if row.get('wandb_run_id')}
+    groups=[]
+    for run in runs:
+        for group in run.get('groups',[]):groups.append((run,group))
+    warnings=[]
+    for link in registry.get('links',[]):
+        record=records.get(link.get('training_run_id'))
+        if record is None:
+            warnings.append(f"训练run不存在：{link.get('training_run_id')}");continue
+        matched=[]
+        sha=link.get('bundle_sha256')
+        if sha:
+            matched.extend((run,group) for run,group in groups if group.get('sha256')==sha)
+        allowed_batches=set(link.get('evaluation_batches',[]))
+        if allowed_batches:
+            matched=[(run,group) for run,group in matched if run.get('batch') in allowed_batches]
+        for selector in link.get('evaluation_selectors',[]):
+            matched.extend((run,group) for run,group in groups
+                           if group.get('model')==selector.get('model')
+                           and (not selector.get('batch') or run.get('batch')==selector.get('batch'))
+                           and run.get('batch','').startswith(selector.get('batch_prefix','')))
+        unique={}
+        for run,group in matched:
+            key=(run.get('batch'),run.get('scene'),group.get('model'),group.get('mode'))
+            unique[key]=(run,group)
+        evaluations=[]
+        for run,group in unique.values():
+            evaluations.append(dict(batch=run.get('batch'),scene=run.get('scene'),updated_at=run.get('updated_at'),
+                                    model=group.get('model'),method=group.get('method'),successes=group.get('successes',0),
+                                    valid=group.get('valid',0),invalid=group.get('invalid',0),rate=group.get('rate'),
+                                    bundle_sha256=group.get('sha256')))
+            group['training_run_id']=record['wandb_run_id']
+            group['training_run_url']=record.get('url')
+            group['checkpoint_role']=link.get('checkpoint_role')
+            group['checkpoint_step']=link.get('checkpoint_step')
+        evaluations.sort(key=lambda item:(item.get('updated_at') or '',item.get('batch') or ''),reverse=True)
+        record['checkpoints'].append(dict(role=link.get('checkpoint_role'),step=link.get('checkpoint_step'),
+                                          bundle_sha256=sha,note=link.get('note'),evaluations=evaluations))
+    ordered=sorted(records.values(),key=lambda item:item.get('created_at',''),reverse=True)
+    return dict(generated_at=training.get('generated_at'),project=training.get('project'),
+                project_url=training.get('project_url'),runs=ordered,warnings=warnings)
+
 def snapshot(root):
     audit_rows=read(root/'weekend_eval_20260920/failure_audit.json',[])
     audit={(r['batch'],r['scene'],r['model']):r for r in audit_rows}
@@ -84,7 +131,10 @@ def snapshot(root):
             group['training_data']='混合数据 · Box＋Bottle' if known else '待核实'
             group['training_data_source']='已核对批次模型归档' if known else '未核对训练数据；不按测试场景推断'
     history=read(Path(__file__).parent/'historical_results.json',[])
-    return dict(generated_at=datetime.datetime.now().astimezone().isoformat(timespec='seconds'),runs=live+history,scope='两批主测试、RDT、初始化对照及历史v19单任务18配置；不同协议不合并排名')
+    runs=live+history
+    training=attach_training_runs(runs)
+    return dict(generated_at=datetime.datetime.now().astimezone().isoformat(timespec='seconds'),runs=runs,
+                training=training,scope='W&B训练快照＋两批主测试、RDT、初始化对照及历史v19；不同协议不合并排名')
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--results',type=Path,required=True);ap.add_argument('--port',type=int,default=8765);args=ap.parse_args()

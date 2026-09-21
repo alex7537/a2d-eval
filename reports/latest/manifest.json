@@ -1,8 +1,11 @@
 {
-  "generated_at": "2026-09-21T11:09:30+08:00",
+  "generated_at": "2026-09-21T14:10:31+08:00",
   "runs": 28,
   "groups": 42,
   "attempts": 10529,
-  "results_sha256": "375de5e5b67dca200e2e8f8b7931a41d7a5b315e0e8556391a7e57bf4f69d966",
-  "scope": "两批主测试、RDT、初始化对照及历史v19单任务18配置；不同协议不合并排名"
+  "training_runs": 42,
+  "linked_training_runs": 7,
+  "training_snapshot_at": "2026-09-21T14:07:29+08:00",
+  "results_sha256": "451777b7359617d53360ea3c808f5f9d96d1d48f32f67b013ded6bb5f5f864b9",
+  "scope": "W&B训练快照＋已发布测评快照；不同协议不合并排名"
 }
