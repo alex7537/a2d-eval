@@ -12,10 +12,10 @@ class ExportTest(unittest.TestCase):
    (batch/'auto_report_status.json').write_text(json.dumps(dict(rows=[dict(scene='box',model='dp',valid=2,successes=1,attempts=3,invalid=1,failure_observations={'unknown':1})],state='已完成',warnings=[],updated_at='now')))
    out=export_report(batch,Path(tmp)/'site');g=json.loads((out/'results.json').read_text())['runs'][0]['groups'][0]
    self.assertEqual((g['successes'],g['valid'],g['invalid'],g['rate']),(1,2,1,.5))
-   self.assertIn('./app.js',(out/'index.html').read_text());self.assertEqual((out/'REPORT.md').read_text(),'canonical report')
+   self.assertIn('./app.js',(out/'index.html').read_text());self.assertIn('测评记录',(out/'index.html').read_text());self.assertTrue((out/'evaluation.html').is_file());self.assertEqual((out/'REPORT.md').read_text(),'canonical report')
  def test_refresh_static_snapshot_with_training_links(self):
   with tempfile.TemporaryDirectory() as tmp:
    root=Path(tmp);source=root/'evaluation.json';out=root/'site'
    source.write_text(json.dumps(dict(generated_at='old',scope='old',runs=[dict(batch='b',scene='box',groups=[dict(model='m',mode='x',sha256='abc',attempts=2,successes=1,valid=2,invalid=0,rate=.5,method='x')])])) )
    data=export_from_snapshot(source,out)
-   self.assertIn('training',data);self.assertTrue((out/'results.json').is_file());self.assertIn('training_runs',json.loads((out/'manifest.json').read_text()))
+   self.assertIn('training',data);self.assertTrue((out/'results.json').is_file());self.assertTrue((out/'evaluation.html').is_file());self.assertNotIn('id="rows"',(out/'index.html').read_text());self.assertIn('模型测试结果',(out/'evaluation.html').read_text());self.assertIn('training_runs',json.loads((out/'manifest.json').read_text()))

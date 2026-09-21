@@ -22,7 +22,8 @@ python3 -m http.server 8080 --bind 0.0.0.0 --directory /path/to/site
 
 同事复制整个 site 文件夹即可部署，也可以由 Nginx 等静态服务器托管在子路径。无需仿真环境或原始测试目录。访问服务器 IP:8080；网络需允许该端口。
 
-包含 index.html、app.js、style.css、results.json、REPORT.md。`results.json`同时
+包含 index.html、evaluation.html、app.js、style.css、results.json、REPORT.md。
+`index.html`为训练模型页，`evaluation.html`为完整测评页；`results.json`同时
 包含训练快照和测评结果。结果不实时更新；重新同步W&B、导出并提交后才更新。
 REPORT.md 保留原始证据路径，分享前核对接收范围。
 

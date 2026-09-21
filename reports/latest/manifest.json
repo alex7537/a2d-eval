@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-21T14:10:31+08:00",
+  "generated_at": "2026-09-21T14:24:37+08:00",
   "runs": 28,
   "groups": 42,
   "attempts": 10529,
   "training_runs": 42,
   "linked_training_runs": 7,
   "training_snapshot_at": "2026-09-21T14:07:29+08:00",
-  "results_sha256": "451777b7359617d53360ea3c808f5f9d96d1d48f32f67b013ded6bb5f5f864b9",
+  "results_sha256": "b438e29a5dbe6b9d651c54d649619e6c2039e4e67762a283e25a28cd86456a3b",
   "scope": "W&B训练快照＋已发布测评快照；不同协议不合并排名"
 }

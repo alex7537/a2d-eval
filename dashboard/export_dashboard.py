@@ -5,10 +5,11 @@ from server import snapshot,attach_training_runs,STATIC
 
 def write_dashboard(data,output):
     output=Path(output);output.mkdir(parents=True,exist_ok=True)
-    for name in ('index.html','app.js','style.css'):shutil.copyfile(STATIC/name,output/name)
-    html=(output/'index.html').read_text().replace('href="/style.css"','href="./style.css"').replace('src="/app.js"','src="./app.js"')
-    html=html.replace('<script src="./app.js">','<script>window.STATIC_REPORT=true;</script><script src="./app.js">')
-    (output/'index.html').write_text(html)
+    for name in ('index.html','evaluation.html','app.js','style.css'):shutil.copyfile(STATIC/name,output/name)
+    for name in ('index.html','evaluation.html'):
+        path=output/name;html=path.read_text().replace('href="/style.css"','href="./style.css"').replace('src="/app.js"','src="./app.js"').replace('href="/evaluation.html"','href="./evaluation.html"').replace('href="/"','href="./index.html"')
+        html=html.replace('<script src="./app.js">','<script>window.STATIC_REPORT=true;</script><script src="./app.js">')
+        path.write_text(html)
     raw=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
     tmp=output/'results.json.tmp';tmp.write_text(raw);tmp.replace(output/'results.json')
     groups=[g for r in data['runs'] for g in r['groups']]

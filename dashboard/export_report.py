@@ -22,8 +22,9 @@ def export_report(batch, output):
                                        metric=plan.get('metric','未记录'),layout_replay=plan.get('layout_replay',False),
                                        limitations=['静态归档；执行模式按原报告汇总，不代表逐模式对照'])))
     output.mkdir(parents=True,exist_ok=True)
-    for name in ('index.html','app.js','style.css'):shutil.copyfile(STATIC/name,output/name)
-    html=(output/'index.html').read_text().replace('href="/style.css"','href="./style.css"').replace('src="/app.js"','src="./app.js"')
+    shutil.copyfile(STATIC/'evaluation.html',output/'index.html')
+    for name in ('evaluation.html','app.js','style.css'):shutil.copyfile(STATIC/name,output/name)
+    html=(output/'index.html').read_text().replace('href="/style.css"','href="./style.css"').replace('src="/app.js"','src="./app.js"').replace('href="/evaluation.html"','href="./index.html"').replace('href="/"','href="./index.html"')
     html=html.replace('<script src="./app.js">','<script>window.STATIC_REPORT=true;</script><script src="./app.js">')
     (output/'index.html').write_text(html)
     payload=dict(generated_at=status['updated_at'],runs=runs,scope='静态结果快照 · 与随附报告一致')

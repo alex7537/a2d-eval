@@ -151,8 +151,8 @@ def main():
                     kind='application/json; charset=utf-8'
                 except Exception:
                     self.send_error(500,'Result aggregation failed');return
-            elif route in ('/','/app.js','/style.css'):
-                file={'/':'index.html','/app.js':'app.js','/style.css':'style.css'}[route];data=(STATIC/file).read_bytes();kind={'/':'text/html; charset=utf-8','/app.js':'text/javascript; charset=utf-8','/style.css':'text/css; charset=utf-8'}[route]
+            elif route in ('/','/evaluation.html','/app.js','/style.css'):
+                file={'/':'index.html','/evaluation.html':'evaluation.html','/app.js':'app.js','/style.css':'style.css'}[route];data=(STATIC/file).read_bytes();kind={'/':'text/html; charset=utf-8','/evaluation.html':'text/html; charset=utf-8','/app.js':'text/javascript; charset=utf-8','/style.css':'text/css; charset=utf-8'}[route]
             else:self.send_error(404);return
             self.send_response(200);self.send_header('Content-Type',kind);self.send_header('Cache-Control','no-store');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
         def log_message(self,*a):pass
