@@ -1,0 +1,1647 @@
+{
+  "generated_at": "2026-09-21T11:09:30+08:00",
+  "runs": [
+    {
+      "id": "/home/yurui/zhangyurui/test-result/dp_imle_cfm_latest_two_scenes_100each_20260917_214355/bottle",
+      "batch": "dp_imle_cfm_latest_two_scenes_100each_20260917_214355",
+      "scene": "B19V2",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_latest",
+          "label": "DP spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 94,
+          "successes": 68,
+          "invalid": 6,
+          "rate": 0.723404255319149,
+          "failures": {
+            "持续不足": 3,
+            "未抬升5cm": 3,
+            "无有效接触": 17,
+            "接触与抬升不同步": 3
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 6
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "f1e537b09f9be8e5b83a387ff51f19345f47dc79087133328cfc0836c4771645",
+          "bundle": "/home/yurui/zhangyurui/ckpt/dp_multitask_100ep_best_raw_latest_20260911/dp-multitask-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "imle_latest",
+          "label": "IMLE spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 98,
+          "successes": 60,
+          "invalid": 2,
+          "rate": 0.6122448979591837,
+          "failures": {
+            "无有效接触": 17,
+            "未抬升5cm": 16,
+            "接触与抬升不同步": 3,
+            "持续不足": 2
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 2
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "13d6db49752a89dfdab93ee77481835300ac412b2b37fd142b27951d028ad3b7",
+          "bundle": "/home/yurui/zhangyurui/ckpt/imle_multitask_box300_bottle300_100ep_best_ema_latest_20260908/imle-multitask-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "cfm_latest",
+          "label": "CFM spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 91,
+          "successes": 47,
+          "invalid": 9,
+          "rate": 0.5164835164835165,
+          "failures": {
+            "无有效接触": 30,
+            "未抬升5cm": 10,
+            "持续不足": 3,
+            "接触与抬升不同步": 1
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 9
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117",
+          "bundle": "/home/shared-assets/yurui-test-eval/ckpt-eval/9-4-muti-cfm/multitask_box300_bottle300_cfm_20260904_latest_best_raw/latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": []
+      },
+      "updated_at": "2026-09-18T22:17:57+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/dp_imle_cfm_latest_two_scenes_100each_20260917_214355/box",
+      "batch": "dp_imle_cfm_latest_two_scenes_100each_20260917_214355",
+      "scene": "A10V1",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_latest",
+          "label": "DP spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 96,
+          "successes": 61,
+          "invalid": 4,
+          "rate": 0.6354166666666666,
+          "failures": {
+            "无有效接触": 22,
+            "未抬升5cm": 11,
+            "持续不足": 2
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 4
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "f1e537b09f9be8e5b83a387ff51f19345f47dc79087133328cfc0836c4771645",
+          "bundle": "/home/yurui/zhangyurui/ckpt/dp_multitask_100ep_best_raw_latest_20260911/dp-multitask-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "imle_latest",
+          "label": "IMLE spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 98,
+          "successes": 57,
+          "invalid": 2,
+          "rate": 0.5816326530612245,
+          "failures": {
+            "无有效接触": 22,
+            "未抬升5cm": 17,
+            "接触与抬升不同步": 1,
+            "持续不足": 1
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 2
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "13d6db49752a89dfdab93ee77481835300ac412b2b37fd142b27951d028ad3b7",
+          "bundle": "/home/yurui/zhangyurui/ckpt/imle_multitask_box300_bottle300_100ep_best_ema_latest_20260908/imle-multitask-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "cfm_latest",
+          "label": "CFM spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 93,
+          "successes": 52,
+          "invalid": 7,
+          "rate": 0.5591397849462365,
+          "failures": {
+            "无有效接触": 29,
+            "未抬升5cm": 9,
+            "持续不足": 3
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 7
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117",
+          "bundle": "/home/shared-assets/yurui-test-eval/ckpt-eval/9-4-muti-cfm/multitask_box300_bottle300_cfm_20260904_latest_best_raw/latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": []
+      },
+      "updated_at": "2026-09-18T11:26:59+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/four_latest_step_gt_100each_20260916_162515/bottle",
+      "batch": "four_latest_step_gt_100each_20260916_162515",
+      "scene": "B19V2",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "cfm_pro5000_latest",
+          "label": "CFM PRO5000",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 96,
+          "successes": 67,
+          "invalid": 4,
+          "rate": 0.6979166666666666,
+          "failures": {
+            "无有效接触": 17,
+            "接触与抬升不同步": 2,
+            "未抬升5cm": 8,
+            "持续不足": 2
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 4
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "f524ccddf5fdf7c709086a69e97f69d8a93087c25d8d29349f9e5d29e5fd5688",
+          "bundle": "/home/yurui/zhangyurui/ckpt/pro5000_multitask_cfm_20260915_latest_best_ema/latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "cfm_cls_latest",
+          "label": "CFM CLS",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 97,
+          "successes": 55,
+          "invalid": 3,
+          "rate": 0.5670103092783505,
+          "failures": {
+            "接触与抬升不同步": 5,
+            "无有效接触": 21,
+            "未抬升5cm": 12,
+            "持续不足": 4
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 3
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "6c139c2bf27780e9a4e29d77f5534343674dbfb5bf235e858b46e59351957399",
+          "bundle": "/home/yurui/zhangyurui/ckpt/cfm_cls_multitask_100ep_best_raw_latest_20260911/cfm-cls-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "cfm_patch49_latest",
+          "label": "CFM spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 91,
+          "successes": 60,
+          "invalid": 9,
+          "rate": 0.6593406593406593,
+          "failures": {
+            "无有效接触": 21,
+            "未抬升5cm": 7,
+            "接触与抬升不同步": 2,
+            "持续不足": 1
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 9
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117",
+          "bundle": "/home/shared-assets/yurui-test-eval/ckpt-eval/9-4-muti-cfm/multitask_box300_bottle300_cfm_20260904_latest_best_raw/latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "wan_latest",
+          "label": "Joint WAM",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 94,
+          "successes": 40,
+          "invalid": 6,
+          "rate": 0.425531914893617,
+          "failures": {
+            "未抬升5cm": 26,
+            "无有效接触": 23,
+            "持续不足": 2,
+            "接触与抬升不同步": 3
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 6
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "3cbf1d23c2cdd5bdd441288bc297c4407ee545a78064089a71563ecefd47f7d0",
+          "bundle": "/home/yurui/zhangyurui/ckpt/wan_policy_bundle_20260907_144624/joint-wam-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": []
+      },
+      "updated_at": "2026-09-19T10:23:03+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/four_latest_step_gt_100each_20260916_162515/box",
+      "batch": "four_latest_step_gt_100each_20260916_162515",
+      "scene": "A10V1",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "cfm_pro5000_latest",
+          "label": "CFM PRO5000",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 97,
+          "successes": 56,
+          "invalid": 3,
+          "rate": 0.5773195876288659,
+          "failures": {
+            "无有效接触": 26,
+            "未抬升5cm": 13,
+            "持续不足": 1,
+            "接触与抬升不同步": 1
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 3
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "f524ccddf5fdf7c709086a69e97f69d8a93087c25d8d29349f9e5d29e5fd5688",
+          "bundle": "/home/yurui/zhangyurui/ckpt/pro5000_multitask_cfm_20260915_latest_best_ema/latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "cfm_cls_latest",
+          "label": "CFM CLS",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 92,
+          "successes": 56,
+          "invalid": 8,
+          "rate": 0.6086956521739131,
+          "failures": {
+            "无有效接触": 20,
+            "持续不足": 3,
+            "未抬升5cm": 10,
+            "接触与抬升不同步": 3
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 8
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "6c139c2bf27780e9a4e29d77f5534343674dbfb5bf235e858b46e59351957399",
+          "bundle": "/home/yurui/zhangyurui/ckpt/cfm_cls_multitask_100ep_best_raw_latest_20260911/cfm-cls-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "cfm_patch49_latest",
+          "label": "CFM spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 98,
+          "successes": 62,
+          "invalid": 2,
+          "rate": 0.6326530612244898,
+          "failures": {
+            "未抬升5cm": 8,
+            "无有效接触": 26,
+            "接触与抬升不同步": 1,
+            "持续不足": 1
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 2
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117",
+          "bundle": "/home/shared-assets/yurui-test-eval/ckpt-eval/9-4-muti-cfm/multitask_box300_bottle300_cfm_20260904_latest_best_raw/latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        },
+        {
+          "model": "wan_latest",
+          "label": "Joint WAM",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 100,
+          "planned": 100,
+          "valid": 93,
+          "successes": 47,
+          "invalid": 7,
+          "rate": 0.5053763440860215,
+          "failures": {
+            "无有效接触": 27,
+            "未抬升5cm": 17,
+            "接触与抬升不同步": 1,
+            "持续不足": 1
+          },
+          "infrastructure_errors": {
+            "未记录异常详情": 7
+          },
+          "failure_source": "逐步数据审计（诊断现象）",
+          "sha256": "3cbf1d23c2cdd5bdd441288bc297c4407ee545a78064089a71563ecefd47f7d0",
+          "bundle": "/home/yurui/zhangyurui/ckpt/wan_policy_bundle_20260907_144624/joint-wam-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": []
+      },
+      "updated_at": "2026-09-17T09:46:34+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/legacy_init_box_smoke_20260920_145424",
+      "batch": "legacy_init_box_smoke_20260920_145424",
+      "scene": "A10V1",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_latest",
+          "label": "DP spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 3,
+          "planned": 3,
+          "valid": 3,
+          "successes": 2,
+          "invalid": 0,
+          "rate": 0.6666666666666666,
+          "failures": {
+            "无有效接触": 1
+          },
+          "infrastructure_errors": {},
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": "f1e537b09f9be8e5b83a387ff51f19345f47dc79087133328cfc0836c4771645",
+          "bundle": "/home/yurui/zhangyurui/ckpt/dp_multitask_100ep_best_raw_latest_20260911/dp-multitask-latest-raw.tgz",
+          "training_data": "待核实",
+          "training_data_source": "未核对训练数据；不按测试场景推断"
+        },
+        {
+          "model": "imle_latest",
+          "label": "IMLE spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 3,
+          "planned": 3,
+          "valid": 3,
+          "successes": 3,
+          "invalid": 0,
+          "rate": 1.0,
+          "failures": {},
+          "infrastructure_errors": {},
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": "13d6db49752a89dfdab93ee77481835300ac412b2b37fd142b27951d028ad3b7",
+          "bundle": "/home/yurui/zhangyurui/ckpt/imle_multitask_box300_bottle300_100ep_best_ema_latest_20260908/imle-multitask-latest-raw.tgz",
+          "training_data": "待核实",
+          "training_data_source": "未核对训练数据；不按测试场景推断"
+        },
+        {
+          "model": "cfm_latest",
+          "label": "CFM spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 3,
+          "planned": 3,
+          "valid": 3,
+          "successes": 2,
+          "invalid": 0,
+          "rate": 0.6666666666666666,
+          "failures": {
+            "无有效接触": 1
+          },
+          "infrastructure_errors": {},
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117",
+          "bundle": "/home/shared-assets/yurui-test-eval/ckpt-eval/9-4-muti-cfm/multitask_box300_bottle300_cfm_20260904_latest_best_raw/latest-raw.tgz",
+          "training_data": "待核实",
+          "training_data_source": "未核对训练数据；不按测试场景推断"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": []
+      },
+      "updated_at": "2026-09-20T15:19:56+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/paired_v3_reset_aligned_models_box_20260920_140835",
+      "batch": "paired_v3_reset_aligned_models_box_20260920_140835",
+      "scene": "A10V1",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_latest",
+          "label": "DP spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 3,
+          "planned": 3,
+          "valid": 3,
+          "successes": 0,
+          "invalid": 0,
+          "rate": 0.0,
+          "failures": {
+            "接触/抬升不同步或持续不足": 1,
+            "未抬升5cm": 1,
+            "无有效接触": 1
+          },
+          "infrastructure_errors": {},
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": "f1e537b09f9be8e5b83a387ff51f19345f47dc79087133328cfc0836c4771645",
+          "bundle": "/home/yurui/zhangyurui/ckpt/dp_multitask_100ep_best_raw_latest_20260911/dp-multitask-latest-raw.tgz",
+          "training_data": "待核实",
+          "training_data_source": "未核对训练数据；不按测试场景推断"
+        },
+        {
+          "model": "imle_latest",
+          "label": "IMLE spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 3,
+          "planned": 3,
+          "valid": 3,
+          "successes": 0,
+          "invalid": 0,
+          "rate": 0.0,
+          "failures": {
+            "无有效接触": 3
+          },
+          "infrastructure_errors": {},
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": "13d6db49752a89dfdab93ee77481835300ac412b2b37fd142b27951d028ad3b7",
+          "bundle": "/home/yurui/zhangyurui/ckpt/imle_multitask_box300_bottle300_100ep_best_ema_latest_20260908/imle-multitask-latest-raw.tgz",
+          "training_data": "待核实",
+          "training_data_source": "未核对训练数据；不按测试场景推断"
+        },
+        {
+          "model": "cfm_latest",
+          "label": "CFM spatial49",
+          "mode": "step_gt",
+          "method": "逐步 RPC＋GT",
+          "attempts": 3,
+          "planned": 3,
+          "valid": 3,
+          "successes": 0,
+          "invalid": 0,
+          "rate": 0.0,
+          "failures": {
+            "无有效接触": 3
+          },
+          "infrastructure_errors": {},
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117",
+          "bundle": "/home/shared-assets/yurui-test-eval/ckpt-eval/9-4-muti-cfm/multitask_box300_bottle300_cfm_20260904_latest_best_raw/latest-raw.tgz",
+          "training_data": "待核实",
+          "training_data_source": "未核对训练数据；不按测试场景推断"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": true,
+        "limitations": []
+      },
+      "updated_at": "2026-09-20T14:44:17+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/rdt_fixed_bottle_50_20260920_171335",
+      "batch": "rdt_fixed_bottle_50_20260920_171335",
+      "scene": "B19V2",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "rdt170m latest raw step100000",
+          "label": "rdt170m latest raw step100000",
+          "mode": "Step+GT+contact",
+          "method": "逐步 RPC＋GT",
+          "attempts": 50,
+          "planned": 50,
+          "valid": 47,
+          "successes": 4,
+          "invalid": 3,
+          "rate": 0.0851063829787234,
+          "failures": {
+            "未抬升5cm": 35,
+            "证据不足，待逐步审计": 8
+          },
+          "infrastructure_errors": {
+            "RuntimeError('reset_invalid: initial object height or pose invalid')": 3
+          },
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": null,
+          "bundle": "/home/yurui/zhangyurui/ckpt/rdt_bundle_20260914_174812/rdt170m-a2d-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "thumb+2other fingers>1e-4N and lift>=.05m for5 consecutive observations",
+        "layout_replay": false,
+        "limitations": [
+          "live preprocessing parity pending",
+          "13dim absolute value<=2pi guard differs from other model guards",
+          "independent new deployment pilot, not formal benchmark"
+        ]
+      },
+      "updated_at": "2026-09-20T20:19:29+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/rdt_fixed_box_50_20260920_171335",
+      "batch": "rdt_fixed_box_50_20260920_171335",
+      "scene": "A10V1",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "rdt170m latest raw step100000",
+          "label": "rdt170m latest raw step100000",
+          "mode": "Step+GT+contact",
+          "method": "逐步 RPC＋GT",
+          "attempts": 50,
+          "planned": 50,
+          "valid": 49,
+          "successes": 6,
+          "invalid": 1,
+          "rate": 0.12244897959183673,
+          "failures": {
+            "未抬升5cm": 37,
+            "证据不足，待逐步审计": 6
+          },
+          "infrastructure_errors": {
+            "RuntimeError('reset_invalid: initial object height or pose invalid')": 1
+          },
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": null,
+          "bundle": "/home/yurui/zhangyurui/ckpt/rdt_bundle_20260914_174812/rdt170m-a2d-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "thumb+2other fingers>1e-4N and lift>=.05m for5 consecutive observations",
+        "layout_replay": false,
+        "limitations": [
+          "live preprocessing parity pending",
+          "13dim absolute value<=2pi guard differs from other model guards",
+          "independent new deployment pilot, not formal benchmark"
+        ]
+      },
+      "updated_at": "2026-09-20T18:55:00+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/rdt_fixed_smoke_20260920_171128",
+      "batch": "rdt_fixed_smoke_20260920_171128",
+      "scene": "B19V2",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "rdt170m latest raw step100000",
+          "label": "rdt170m latest raw step100000",
+          "mode": "Step+GT+contact",
+          "method": "逐步 RPC＋GT",
+          "attempts": 1,
+          "planned": 1,
+          "valid": 1,
+          "successes": 0,
+          "invalid": 0,
+          "rate": 0.0,
+          "failures": {
+            "证据不足，待逐步审计": 1
+          },
+          "infrastructure_errors": {},
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": null,
+          "bundle": "/home/yurui/zhangyurui/ckpt/rdt_bundle_20260914_174812/rdt170m-a2d-latest-raw.tgz",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "thumb+2other fingers>1e-4N and lift>=.05m for5 consecutive observations",
+        "layout_replay": false,
+        "limitations": [
+          "live preprocessing parity pending",
+          "13dim absolute value<=2pi guard differs from other model guards",
+          "independent new deployment pilot, not formal benchmark"
+        ]
+      },
+      "updated_at": "2026-09-20T17:13:52+08:00"
+    },
+    {
+      "id": "/home/yurui/zhangyurui/test-result/rdt_latest_B19_step_gt_10_20260915",
+      "batch": "rdt_latest_B19_step_gt_10_20260915",
+      "scene": "B19V2",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "rdt170m latest raw step100000",
+          "label": "rdt170m latest raw step100000",
+          "mode": "Step+GT+contact",
+          "method": "逐步 RPC＋GT",
+          "attempts": 10,
+          "planned": 10,
+          "valid": 9,
+          "successes": 0,
+          "invalid": 1,
+          "rate": 0.0,
+          "failures": {
+            "未抬升5cm": 9
+          },
+          "infrastructure_errors": {
+            "AssertionError()": 1
+          },
+          "failure_source": "回合摘要（诊断现象）",
+          "sha256": null,
+          "bundle": "",
+          "training_data": "混合数据 · Box＋Bottle",
+          "training_data_source": "已核对批次模型归档"
+        }
+      ],
+      "warnings": [],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "thumb+2other fingers>1e-4N and lift>=.05m for5 consecutive observations",
+        "layout_replay": false,
+        "limitations": [
+          "live preprocessing parity pending",
+          "13dim absolute value<=2pi guard differs from other model guards",
+          "independent new deployment pilot, not formal benchmark"
+        ]
+      },
+      "updated_at": "2026-09-15T21:33:28+08:00"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_best_ema_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "cfm_post_best_ema",
+          "label": "cfm_post_best_ema",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 11,
+          "invalid": 483,
+          "rate": 0.6470588235294118,
+          "failures": {
+            "contact_without_5cm_lift": 1,
+            "grasp_lift_5cm_duration_below_5_frames": 1,
+            "insufficient_target_object_contact_pattern": 4
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/cfm-post-best-ema-ema.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "f583e4f67e5e0e7af8b618eae448017553b92e8e1a2bb08869f30b694b5dd824"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_best_ema_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "cfm_post_best_ema",
+          "label": "cfm_post_best_ema",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 18,
+          "successes": 11,
+          "invalid": 482,
+          "rate": 0.6111111111111112,
+          "failures": {
+            "contact_without_5cm_lift": 2,
+            "insufficient_target_object_contact_pattern": 5
+          },
+          "infrastructure_errors": {
+            "runtime_error": 482
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/cfm-post-best-ema-ema.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "53dda20eab6ade4722ec095bfed83369e4d82a2bf5e8187c99e063d49b28fc1a"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_best_raw_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "cfm_post_best_raw",
+          "label": "cfm_post_best_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 12,
+          "invalid": 483,
+          "rate": 0.7058823529411765,
+          "failures": {
+            "grasp_lift_5cm_duration_below_5_frames": 2,
+            "insufficient_target_object_contact_pattern": 3
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/cfm-post-best-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "586c25480778bcb3459857ea181225c635071c50f1db4630e708d6e1173afa5e"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_best_raw_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "cfm_post_best_raw",
+          "label": "cfm_post_best_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 19,
+          "successes": 11,
+          "invalid": 481,
+          "rate": 0.5789473684210527,
+          "failures": {
+            "grasp_lift_5cm_duration_below_5_frames": 1,
+            "insufficient_target_object_contact_pattern": 7
+          },
+          "infrastructure_errors": {
+            "runtime_error": 481
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/cfm-post-best-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "484abb437ff5a21c7cd9c74c7445d6b246a24d7508678672ed545db18e75a7e2"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_latest_raw_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "cfm_post_latest_raw",
+          "label": "cfm_post_latest_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 11,
+          "invalid": 483,
+          "rate": 0.6470588235294118,
+          "failures": {
+            "contact_without_5cm_lift": 2,
+            "grasp_lift_5cm_duration_below_5_frames": 1,
+            "insufficient_target_object_contact_pattern": 3
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/cfm-post-latest-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "61b3011807221d96c34cb6fb4ea880657ce8f2e0f5962bf3c71153c4e45a8091"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_latest_raw_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "cfm_post_latest_raw",
+          "label": "cfm_post_latest_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 18,
+          "successes": 10,
+          "invalid": 482,
+          "rate": 0.5555555555555556,
+          "failures": {
+            "insufficient_target_object_contact_pattern": 8
+          },
+          "infrastructure_errors": {
+            "runtime_error": 482
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/cfm-post-latest-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "1fe9ab9c8895f9406cf2cda8d2d0a89541a2d7b4e4d33ebb7239a1b4e0a1eeb8"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_best_ema_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_best_ema",
+          "label": "dp_best_ema",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 12,
+          "invalid": 483,
+          "rate": 0.7058823529411765,
+          "failures": {
+            "contact_without_5cm_lift": 2,
+            "grasp_lift_5cm_duration_below_5_frames": 1,
+            "insufficient_target_object_contact_pattern": 2
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/dp-best-ema-ema.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "e825933b2021ee6f2fc5b9ca89300fd7367812bdf6ba1aeb3aaee9e53750df6a"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_best_ema_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_best_ema",
+          "label": "dp_best_ema",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 18,
+          "successes": 15,
+          "invalid": 482,
+          "rate": 0.8333333333333334,
+          "failures": {
+            "contact_without_5cm_lift": 1,
+            "insufficient_target_object_contact_pattern": 2
+          },
+          "infrastructure_errors": {
+            "runtime_error": 482
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/dp-best-ema-ema.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "7d494988afc44bc194d5e33bcdca6e9844995cc6f86fd10212fbc732ce68dfd7"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_best_raw_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_best_raw",
+          "label": "dp_best_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 11,
+          "invalid": 483,
+          "rate": 0.6470588235294118,
+          "failures": {
+            "contact_without_5cm_lift": 2,
+            "insufficient_target_object_contact_pattern": 4
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/dp-best-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "9e04172bae459d38835661329372e16f7f83c6773b03e668f4d6058f289c6898"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_best_raw_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_best_raw",
+          "label": "dp_best_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 18,
+          "successes": 11,
+          "invalid": 482,
+          "rate": 0.6111111111111112,
+          "failures": {
+            "contact_without_5cm_lift": 1,
+            "insufficient_target_object_contact_pattern": 6
+          },
+          "infrastructure_errors": {
+            "runtime_error": 482
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/dp-best-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "fe0068b0fd1e7e3ab9a89ba1e0b83edb484c34eb30bf8bd8863d92f04f167445"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_latest_raw_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_latest_raw",
+          "label": "dp_latest_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 10,
+          "invalid": 483,
+          "rate": 0.5882352941176471,
+          "failures": {
+            "contact_without_5cm_lift": 3,
+            "insufficient_target_object_contact_pattern": 4
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/dp-latest-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "c5215045f464da696e32395eea7851f50aa72b7ec9f3ba4e31fe669e6e402600"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_latest_raw_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "dp_latest_raw",
+          "label": "dp_latest_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 18,
+          "successes": 12,
+          "invalid": 482,
+          "rate": 0.6666666666666666,
+          "failures": {
+            "contact_without_5cm_lift": 1,
+            "insufficient_target_object_contact_pattern": 5
+          },
+          "infrastructure_errors": {
+            "runtime_error": 482
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/dp-latest-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "2a6092a18e9b4b0b3e8a7fb8f89905a0edb0ba66ee3e267a18cf029bedbf41ea"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_best_ema_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "imle_best_ema",
+          "label": "imle_best_ema",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 12,
+          "invalid": 483,
+          "rate": 0.7058823529411765,
+          "failures": {
+            "insufficient_target_object_contact_pattern": 5
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/imle-best-ema-ema.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "4361a37a7c3543fba5855b4ad14fb46bba2f1e3c937cb2527033cc81fc43eaf9"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_best_ema_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "imle_best_ema",
+          "label": "imle_best_ema",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 18,
+          "successes": 13,
+          "invalid": 482,
+          "rate": 0.7222222222222222,
+          "failures": {
+            "contact_without_5cm_lift": 1,
+            "insufficient_target_object_contact_pattern": 4
+          },
+          "infrastructure_errors": {
+            "runtime_error": 482
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/imle-best-ema-ema.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "f2b66a3730bbb0cbd4d67fff3e85e5565f4cf8889e16ebb56a8a0343792890b8"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_best_raw_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "imle_best_raw",
+          "label": "imle_best_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 14,
+          "invalid": 483,
+          "rate": 0.8235294117647058,
+          "failures": {
+            "contact_without_5cm_lift": 1,
+            "insufficient_target_object_contact_pattern": 2
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/imle-best-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "8c87181b082cf8dae6cc57f2559cdd7146945d9a7b02da10627e0a1f716f2715"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_best_raw_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "imle_best_raw",
+          "label": "imle_best_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 18,
+          "successes": 14,
+          "invalid": 482,
+          "rate": 0.7777777777777778,
+          "failures": {
+            "contact_without_5cm_lift": 1,
+            "grasp_lift_5cm_duration_below_5_frames": 1,
+            "insufficient_target_object_contact_pattern": 2
+          },
+          "infrastructure_errors": {
+            "runtime_error": 482
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/imle-best-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "090f5013ea185735f6563d57e75b2a3fcf6b4bd089fba5b03ad9c848addcefca"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_latest_raw_h16_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "imle_latest_raw",
+          "label": "imle_latest_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 16,
+          "successes": 13,
+          "invalid": 484,
+          "rate": 0.8125,
+          "failures": {
+            "contact_without_5cm_lift": 1,
+            "insufficient_target_object_contact_pattern": 2
+          },
+          "infrastructure_errors": {
+            "runtime_error": 484
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/imle-latest-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "321124bb7ec645361f99699be509f49bb8fc2f431090ea081f4d780c3918afc2"
+    },
+    {
+      "id": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_latest_raw_h8_500_summary.json",
+      "batch": "共享历史 v19 · 8-31 单任务模型",
+      "scene": "Box（历史）",
+      "state": "completed",
+      "groups": [
+        {
+          "model": "imle_latest_raw",
+          "label": "imle_latest_raw",
+          "mode": "historical_step",
+          "method": "历史逐步 RPC（独立口径）",
+          "attempts": 500,
+          "planned": 500,
+          "valid": 17,
+          "successes": 10,
+          "invalid": 483,
+          "rate": 0.5882352941176471,
+          "failures": {
+            "insufficient_target_object_contact_pattern": 7
+          },
+          "infrastructure_errors": {
+            "runtime_error": 483
+          },
+          "failure_source": "原始 summary failure_stage_counts",
+          "sha256": null,
+          "bundle": "/home/qingyangli/Downloads/ckpt-eval/8-31-flow-post_dp_imle/imle-latest-raw-raw.tgz",
+          "training_data": "单一数据 · Box",
+          "training_data_source": "共享历史测试汇总：8-31 单任务 Box；未重新审计训练 HDF5"
+        }
+      ],
+      "warnings": [
+        "9000次尝试中仅314次有效；该批基础设施异常严重，不作稳定排名"
+      ],
+      "protocol": {
+        "horizon": 8,
+        "max_steps": 400,
+        "policy_seed": 42,
+        "metric": "valid multi-finger target-object contact and object lift >= 5 cm simultaneously for at least 5 consecutive sampled control frames; >= 10 cm with the same 5-frame gate is recorded separately",
+        "layout_replay": false,
+        "limitations": [
+          "历史400步，与当前300步分开比较",
+          "数据类型来自历史归档分类"
+        ]
+      },
+      "updated_at": "2026-09-03（历史报告）",
+      "source_sha256": "4ad582f2b742b7b9196d99ed04a07ea51f7c8686004ab1f6d4dca007d7abdf33"
+    }
+  ],
+  "scope": "两批主测试、RDT、初始化对照及历史v19单任务18配置；不同协议不合并排名"
+}

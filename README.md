@@ -51,3 +51,18 @@ python3 -m unittest discover -s dashboard/tests -v
 ## 静态结果交付
 
 测试终态由 observer 导出独立静态目录；同事复制后部署即可。[导出与部署说明](dashboard/README.md)。不自动推送远端。
+
+## 全部结果看板（推荐入口）
+
+```bash
+git pull
+python3 -m http.server 8080 --bind 0.0.0.0 --directory reports/latest
+```
+
+`reports/latest` 是本地看板同一聚合源的完整静态快照；单批次目录只展示该批次，不会自动包含后续实验。覆盖范围以页面说明为准，并非所有磁盘历史记录。
+
+发布前刷新：
+```bash
+python3 dashboard/export_dashboard.py --results /path/to/test-result --output reports/latest
+```
+重新导出后提交并推送；同事拉取更新、刷新页面。manifest.json 记录导出时间及数据哈希。
