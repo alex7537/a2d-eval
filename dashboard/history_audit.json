@@ -1,0 +1,864 @@
+[
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_eval_download_5000_summary.json",
+    "status": "已接入",
+    "raw": 629,
+    "valid": 629,
+    "success": 12
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_eval_download_pilot_summary.json",
+    "status": "已接入",
+    "raw": 1,
+    "valid": 1,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_eval_downloads_range_summary.json",
+    "status": "仅索引：缺少成功或完成计数"
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_eval_epoch40_5000_summary.json",
+    "status": "已接入",
+    "raw": 629,
+    "valid": 629,
+    "success": 40
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_eval_epoch40_pilot_summary.json",
+    "status": "已接入",
+    "raw": 1,
+    "valid": 1,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_eval_epoch40_range_summary.json",
+    "status": "仅索引：缺少成功或完成计数"
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_best_ema_50_summary.json",
+    "status": "已接入",
+    "raw": 2,
+    "valid": 2,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_latest_raw_50_summary.json",
+    "status": "已接入",
+    "raw": 1,
+    "valid": 1,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v11_h16_grasp_lift_tiers_best_action_epoch40_500_summary.json",
+    "status": "已接入",
+    "raw": 3,
+    "valid": 3,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v11_h16_grasp_lift_tiers_hand_target_best_ema_500_summary.json",
+    "status": "已接入",
+    "raw": 2,
+    "valid": 2,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v11_h16_grasp_lift_tiers_hand_target_latest_raw_500_summary.json",
+    "status": "已接入",
+    "raw": 2,
+    "valid": 2,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v11_h16_grasp_lift_tiers_latest_8_14_500_summary.json",
+    "status": "已接入",
+    "raw": 2,
+    "valid": 2,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v12_h16_grasp_lift_5f_tiers_best_action_epoch40_500_summary.json",
+    "status": "已接入",
+    "raw": 65,
+    "valid": 65,
+    "success": 20
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v12_h16_grasp_lift_5f_tiers_hand_target_best_ema_500_summary.json",
+    "status": "已接入",
+    "raw": 65,
+    "valid": 65,
+    "success": 49
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v12_h16_grasp_lift_5f_tiers_hand_target_latest_raw_500_summary.json",
+    "status": "已接入",
+    "raw": 64,
+    "valid": 64,
+    "success": 45
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v12_h16_grasp_lift_5f_tiers_latest_8_14_500_summary.json",
+    "status": "已接入",
+    "raw": 65,
+    "valid": 65,
+    "success": 30
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v15_exclusive_horizon_4_8_12_16_5f_hand_target_best_ema_h12_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 7,
+    "success": 4
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v15_exclusive_horizon_4_8_12_16_5f_hand_target_best_ema_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 7,
+    "success": 4
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v15_exclusive_horizon_4_8_12_16_5f_hand_target_best_ema_h4_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 8,
+    "success": 7
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v15_exclusive_horizon_4_8_12_16_5f_hand_target_best_ema_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 7,
+    "success": 6
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v15_exclusive_horizon_4_8_12_16_5f_hand_target_latest_raw_h12_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 7,
+    "success": 5
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v15_exclusive_horizon_4_8_12_16_5f_hand_target_latest_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 7,
+    "success": 6
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v15_exclusive_horizon_4_8_12_16_5f_hand_target_latest_raw_h4_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 7,
+    "success": 4
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v15_exclusive_horizon_4_8_12_16_5f_hand_target_latest_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 7,
+    "success": 4
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v16_exclusive_success_video_horizon_4_8_12_16_5f_hand_target_best_ema_h12_500_summary.json",
+    "status": "已接入",
+    "raw": 58,
+    "valid": 58,
+    "success": 36
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v16_exclusive_success_video_horizon_4_8_12_16_5f_hand_target_best_ema_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 57,
+    "valid": 57,
+    "success": 39
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v16_exclusive_success_video_horizon_4_8_12_16_5f_hand_target_best_ema_h4_500_summary.json",
+    "status": "已接入",
+    "raw": 58,
+    "valid": 58,
+    "success": 33
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v16_exclusive_success_video_horizon_4_8_12_16_5f_hand_target_best_ema_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 58,
+    "valid": 58,
+    "success": 43
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v16_exclusive_success_video_horizon_4_8_12_16_5f_hand_target_latest_raw_h12_500_summary.json",
+    "status": "已接入",
+    "raw": 58,
+    "valid": 58,
+    "success": 38
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v16_exclusive_success_video_horizon_4_8_12_16_5f_hand_target_latest_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 57,
+    "valid": 57,
+    "success": 37
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v16_exclusive_success_video_horizon_4_8_12_16_5f_hand_target_latest_raw_h4_500_summary.json",
+    "status": "已接入",
+    "raw": 58,
+    "valid": 58,
+    "success": 42
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v16_exclusive_success_video_horizon_4_8_12_16_5f_hand_target_latest_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 58,
+    "valid": 58,
+    "success": 38
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_best_ema_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 24,
+    "valid": 24,
+    "success": 18
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_best_ema_h4_500_summary.json",
+    "status": "已接入",
+    "raw": 25,
+    "valid": 25,
+    "success": 13
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_best_ema_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 24,
+    "valid": 24,
+    "success": 18
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_epoch100_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 24,
+    "valid": 24,
+    "success": 17
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_epoch100_raw_h4_500_summary.json",
+    "status": "已接入",
+    "raw": 25,
+    "valid": 25,
+    "success": 17
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_epoch100_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 24,
+    "valid": 24,
+    "success": 14
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_latest_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 24,
+    "valid": 24,
+    "success": 17
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_latest_raw_h4_500_summary.json",
+    "status": "已接入",
+    "raw": 25,
+    "valid": 25,
+    "success": 16
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_hand_target_latest_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 24,
+    "valid": 24,
+    "success": 12
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_rgb_only_final_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 24,
+    "valid": 24,
+    "success": 18
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_rgb_only_final_raw_h4_500_summary.json",
+    "status": "已接入",
+    "raw": 25,
+    "valid": 25,
+    "success": 15
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v17_four_model_horizon_4_8_16_5f_rgb_only_final_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 24,
+    "valid": 24,
+    "success": 14
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_best_ema_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 11
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_best_ema_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 18,
+    "success": 11
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_best_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 12
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_best_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 19,
+    "success": 11
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_latest_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 11
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_cfm_post_latest_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 18,
+    "success": 10
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_best_ema_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 12
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_best_ema_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 18,
+    "success": 15
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_best_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 11
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_best_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 18,
+    "success": 11
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_latest_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 10
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_dp_latest_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 18,
+    "success": 12
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_best_ema_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 12
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_best_ema_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 18,
+    "success": 13
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_best_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 14
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_best_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 18,
+    "success": 14
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_latest_raw_h16_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 16,
+    "success": 13
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v19_cfm_dp_imle_nine_model_horizon_8_16_5f_imle_latest_raw_h8_500_summary.json",
+    "status": "已接入",
+    "raw": 500,
+    "valid": 17,
+    "success": 10
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v2_best_ema_50_summary.json",
+    "status": "已接入",
+    "raw": 1,
+    "valid": 1,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v2_latest_raw_50_summary.json",
+    "status": "已接入",
+    "raw": 1,
+    "valid": 1,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v3_best_ema_50_summary.json",
+    "status": "已接入",
+    "raw": 4,
+    "valid": 4,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v3_latest_raw_50_summary.json",
+    "status": "已接入",
+    "raw": 4,
+    "valid": 4,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v4_best_ema_500_summary.json",
+    "status": "已接入",
+    "raw": 7,
+    "valid": 7,
+    "success": 4
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v4_downloads_500_summary.json",
+    "status": "已接入",
+    "raw": 7,
+    "valid": 7,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v4_epoch40_500_summary.json",
+    "status": "已接入",
+    "raw": 7,
+    "valid": 7,
+    "success": 5
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v4_latest_raw_500_summary.json",
+    "status": "已接入",
+    "raw": 7,
+    "valid": 7,
+    "success": 3
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v5_strict_best_ema_500_summary.json",
+    "status": "已接入",
+    "raw": 136,
+    "valid": 136,
+    "success": 11
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v5_strict_downloads_500_summary.json",
+    "status": "已接入",
+    "raw": 137,
+    "valid": 137,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v5_strict_epoch40_500_summary.json",
+    "status": "已接入",
+    "raw": 136,
+    "valid": 136,
+    "success": 7
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v5_strict_latest_raw_500_summary.json",
+    "status": "已接入",
+    "raw": 136,
+    "valid": 136,
+    "success": 14
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v6_strict_epoch40_500_summary.json",
+    "status": "已接入",
+    "raw": 40,
+    "valid": 40,
+    "success": 4
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v6_strict_latest_8_14_500_summary.json",
+    "status": "已接入",
+    "raw": 40,
+    "valid": 40,
+    "success": 5
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v6_strict_rgb_only_best_500_summary.json",
+    "status": "已接入",
+    "raw": 40,
+    "valid": 40,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v6_strict_rgb_only_latest_500_summary.json",
+    "status": "已接入",
+    "raw": 39,
+    "valid": 39,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v7_h16_strict_epoch40_500_summary.json",
+    "status": "已接入",
+    "raw": 6,
+    "valid": 6,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v7_h16_strict_latest_8_14_500_summary.json",
+    "status": "已接入",
+    "raw": 6,
+    "valid": 6,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v7_h16_strict_rgb_only_best_500_summary.json",
+    "status": "已接入",
+    "raw": 6,
+    "valid": 6,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v7_h16_strict_rgb_only_latest_500_summary.json",
+    "status": "已接入",
+    "raw": 6,
+    "valid": 6,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v8_h16_strict_best_action_epoch40_500_summary.json",
+    "status": "已接入",
+    "raw": 321,
+    "valid": 321,
+    "success": 82
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v8_h16_strict_best_val_epoch22_500_summary.json",
+    "status": "已接入",
+    "raw": 321,
+    "valid": 321,
+    "success": 38
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v8_h16_strict_latest_8_14_500_summary.json",
+    "status": "已接入",
+    "raw": 321,
+    "valid": 321,
+    "success": 121
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v8_h16_strict_level0_step25445_500_summary.json",
+    "status": "已接入",
+    "raw": 321,
+    "valid": 321,
+    "success": 28
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v8_h16_strict_rgb_only_latest_500_summary.json",
+    "status": "已接入",
+    "raw": 320,
+    "valid": 320,
+    "success": 68
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v9_h16_hand_target_strict_best_action_epoch40_500_summary.json",
+    "status": "已接入",
+    "raw": 323,
+    "valid": 323,
+    "success": 83
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v9_h16_hand_target_strict_hand_target_best_ema_500_summary.json",
+    "status": "已接入",
+    "raw": 2,
+    "valid": 2,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v9_h16_hand_target_strict_hand_target_latest_raw_500_summary.json",
+    "status": "已接入",
+    "raw": 1,
+    "valid": 1,
+    "success": 0
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_hand_funnel_v9_h16_hand_target_strict_latest_8_14_500_summary.json",
+    "status": "已接入",
+    "raw": 323,
+    "valid": 323,
+    "success": 121
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_handshape_download_5000_summary.json",
+    "status": "已接入",
+    "raw": 204,
+    "valid": 204,
+    "success": 3
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_handshape_epoch40_5000_summary.json",
+    "status": "已接入",
+    "raw": 203,
+    "valid": 203,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_prelift_arm_joints_download_5000_summary.json",
+    "status": "已接入",
+    "raw": 514,
+    "valid": 514,
+    "success": 377
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_prelift_arm_joints_epoch40_5000_summary.json",
+    "status": "已接入",
+    "raw": 514,
+    "valid": 514,
+    "success": 496
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_prelift_position_download_5000_summary.json",
+    "status": "已接入",
+    "raw": 9,
+    "valid": 9,
+    "success": 7
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_prelift_position_epoch40_5000_summary.json",
+    "status": "已接入",
+    "raw": 8,
+    "valid": 8,
+    "success": 7
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_wrap_download_5000_summary.json",
+    "status": "已接入",
+    "raw": 446,
+    "valid": 446,
+    "success": 9
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_wrap_epoch40_5000_summary.json",
+    "status": "已接入",
+    "raw": 446,
+    "valid": 446,
+    "success": 34
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_b19_imle_latest_n8_smoke_v30_20260908/bottle/imle_mixed_latest_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 7,
+    "success": 3
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_b19_parallel_capacity_n8_v25_20260907/bottle/bottle_latest_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 6,
+    "success": 3
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_b19_parallel_n8_four_models_500ep_v26_20260907/bottle/bottle_best_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 144,
+    "valid": 130,
+    "success": 60
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_b19_parallel_n8_four_models_500ep_v26_20260907/bottle/bottle_latest_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 144,
+    "valid": 138,
+    "success": 64
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_b19_parallel_n8_four_models_500ep_v26_20260907/bottle/mixed_best_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 136,
+    "valid": 127,
+    "success": 25
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_b19_parallel_n8_four_models_500ep_v26_20260907/bottle/mixed_latest_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 136,
+    "valid": 126,
+    "success": 75
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_box_n8_no_depth_ab_v29_20260908/box/mixed_latest_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 7,
+    "success": 5
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_box_parallel_capacity_n16_v28_20260908/box/mixed_latest_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 16,
+    "valid": 15,
+    "success": 12
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_box_parallel_n8_mixed_best_latest_500ep_v27_20260908/box/mixed_best_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 72,
+    "valid": 66,
+    "success": 18
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_box_parallel_n8_mixed_best_latest_500ep_v27_20260908/box/mixed_latest_raw.jsonl",
+    "status": "已重算接入",
+    "raw": 64,
+    "valid": 58,
+    "success": 38
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_cfm_cross_object_v20c_smoke_20260904T1143/box/box_best_ema.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 7,
+    "success": 5
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_sequential_v21_smoke_20260904T1210/box/a2d_six_cfm_sequential_v21_smoke_20260904T1210_bottle_best_raw_h16_8.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 8,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_sequential_v21_smoke_20260904T1210/box/a2d_six_cfm_sequential_v21_smoke_20260904T1210_bottle_latest_raw_h16_8.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 8,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_sequential_v21_smoke_20260904T1210/box/a2d_six_cfm_sequential_v21_smoke_20260904T1210_box_best_ema_h16_8.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 8,
+    "success": 6
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_sequential_v21_smoke_20260904T1210/box/a2d_six_cfm_sequential_v21_smoke_20260904T1210_box_latest_raw_h16_8.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 8,
+    "success": 7
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_sequential_v21_smoke_20260904T1210/box/a2d_six_cfm_sequential_v21_smoke_20260904T1210_mixed_best_raw_h16_8.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 6,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_sequential_v21_smoke_20260904T1210/box/a2d_six_cfm_sequential_v21_smoke_20260904T1210_mixed_latest_raw_h16_8.jsonl",
+    "status": "已重算接入",
+    "raw": 8,
+    "valid": 8,
+    "success": 6
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_sequential_v22_50ep_20260904/box/a2d_six_cfm_sequential_v22_50ep_20260904_box_best_ema_h16_50.jsonl",
+    "status": "已重算接入",
+    "raw": 1,
+    "valid": 1,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_sequential_v22_50ep_20260904/box/a2d_six_cfm_sequential_v22_50ep_20260904_box_latest_raw_h16_50.jsonl",
+    "status": "已重算接入",
+    "raw": 1,
+    "valid": 1,
+    "success": 1
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907/bottle/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907_bottle_best_raw_h16_50.jsonl",
+    "status": "已重算接入",
+    "raw": 17,
+    "valid": 17,
+    "success": 10
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907/bottle/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907_bottle_latest_raw_h16_50.jsonl",
+    "status": "已重算接入",
+    "raw": 17,
+    "valid": 17,
+    "success": 9
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907/bottle/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907_box_best_ema_h16_50.jsonl",
+    "status": "已重算接入",
+    "raw": 17,
+    "valid": 16,
+    "success": 2
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907/bottle/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907_box_latest_raw_h16_50.jsonl",
+    "status": "已重算接入",
+    "raw": 17,
+    "valid": 16,
+    "success": 3
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907/bottle/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907_mixed_best_raw_h16_50.jsonl",
+    "status": "已重算接入",
+    "raw": 17,
+    "valid": 14,
+    "success": 3
+  },
+  {
+    "file": "/home/shared-assets/yurui-test-eval/a2d_eval_test/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907/bottle/a2d_six_cfm_v24_b19_nongfu_gui_50ep_20260907_mixed_latest_raw_h16_50.jsonl",
+    "status": "已重算接入",
+    "raw": 16,
+    "valid": 16,
+    "success": 8
+  }
+]
