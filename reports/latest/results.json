@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T22:00:05+08:00",
+  "generated_at": "2026-09-22T22:12:14+08:00",
   "runs": [
     {
       "id": "/home/yurui/zhangyurui/test-result/dp_imle_cfm_latest_two_scenes_100each_20260917_214355/bottle",
@@ -7657,6 +7657,49 @@
       ],
       "warnings": [],
       "updated_at": "2026-09-22T22:00:05+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      }
+    },
+    {
+      "id": "cfm_bottle654_latest_100_20260922_213810/bottle/cfm_bottle654_latest",
+      "batch": "cfm_bottle654_latest_100_20260922_213810",
+      "scene": "bottle",
+      "state": "异常停止／未完成",
+      "groups": [
+        {
+          "scene": "bottle",
+          "model": "cfm_bottle654_latest",
+          "attempts": 4,
+          "valid": 3,
+          "successes": 2,
+          "invalid": 1,
+          "failure_observations": {
+            "持续不足": 1
+          },
+          "label": "cfm_bottle654_latest",
+          "mode": "report",
+          "method": "step_gt",
+          "planned": 100,
+          "rate": 0.6666666666666666,
+          "failures": {
+            "持续不足": 1
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "单一数据 · Bottle654",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "0bf0d470cfaa6599f5f0374274690c57c29bb4d982db74581076837dc61ea4ee"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-22T22:12:14+08:00",
       "protocol": {
         "horizon": 16,
         "max_steps": 300,
