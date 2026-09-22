@@ -1,0 +1,43 @@
+name: Update W&B training snapshot
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: wandb-snapshot
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install wandb==0.19.11
+      - name: Fetch training state
+        env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+        run: |
+          if [ -z "$WANDB_API_KEY" ]; then
+            echo 'Configure repository Actions secret WANDB_API_KEY before enabling synchronization.'
+            exit 1
+          fi
+          python dashboard/sync_wandb_runs.py --output /tmp/training_runs.json
+      - name: Merge with latest evaluation snapshot and publish
+        run: |
+          git config user.name 'A2D training snapshot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/training_runs.json dashboard/training_runs.json
+            python dashboard/export_dashboard.py --evaluation-snapshot reports/latest/results.json --output reports/latest
+            git add dashboard/training_runs.json reports/latest
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m 'Refresh W&B training state snapshot'
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1

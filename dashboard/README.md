@@ -43,3 +43,9 @@ python3 tools/a2d_eval_loop/watch_eval_to_obsidian.py --batch /path/to/batch --v
 ```bash
 python3 dashboard/publish_report.py --batch /path/to/batch --remote git@github.com:alex7537/a2d-eval.git
 ```
+
+## W&B 自动更新
+
+仓库 Actions → Update W&B training snapshot 每小时尝试同步一次，也可手动 Run workflow。管理员须在 Settings → Secrets and variables → Actions 配置 `WANDB_API_KEY`（具备目标项目读取权限），不要提交密钥到代码。同步成功后更新训练数据并保留已发布测评记录；失败保留原快照。GitHub定时任务可能延迟，页面的训练快照时间是实际新鲜度依据。
+
+同事 `git pull` 后刷新即可看到已同步状态；静态网页自身不调用 W&B，也不是实时训练监控。
