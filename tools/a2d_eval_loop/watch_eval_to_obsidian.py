@@ -111,7 +111,7 @@ def report(batch, vault, owner_alive=True):
     return snapshot
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--batch',type=Path,required=True);ap.add_argument('--vault',type=Path,required=True);ap.add_argument('--once',action='store_true');ap.add_argument('--interval',type=float,default=60);args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--batch',type=Path,required=True);ap.add_argument('--vault',type=Path,required=True);ap.add_argument('--once',action='store_true');ap.add_argument('--interval',type=float,default=60);ap.add_argument('--publish-remote');ap.add_argument('--publish-branch',default='main');args=ap.parse_args()
     if not args.batch.is_dir() or not args.vault.is_dir():raise SystemExit('Batch/vault must exist')
     with (args.batch/'auto_report.lock').open('a') as lock:
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
@@ -121,6 +121,11 @@ def main():
             try:
                 result=report(args.batch,args.vault,alive)
                 print(json.dumps({'time':result['updated_at'],'state':result['state'],'recorded':result['recorded']},ensure_ascii=False),flush=True)
+                if args.publish_remote and (result['complete'] or not alive or result['state'] in ('暂停','异常停止／未完成','采集结束／等待确认')):
+                    import sys
+                    sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'dashboard'))
+                    from publish_report import publish
+                    print(json.dumps(publish(args.batch,args.publish_remote,args.publish_branch),ensure_ascii=False),flush=True)
                 if args.once or result['complete'] or not alive or result['state']=='异常停止／未完成':break
             except Exception as e:
                 print(f'Report sync failed; retrying: {e!r}',flush=True)
