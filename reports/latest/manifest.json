@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-21T21:12:12+08:00",
-  "runs": 135,
-  "groups": 149,
-  "attempts": 23372,
+  "generated_at": "2026-09-22T22:00:05+08:00",
+  "runs": 137,
+  "groups": 151,
+  "attempts": 23572,
   "training_runs": 42,
   "linked_training_runs": 7,
   "training_snapshot_at": "2026-09-21T14:07:29+08:00",
-  "results_sha256": "d3c964c2fcbc5bc444d069493c1691c497935fe5b569082163b0501623e2f545",
+  "results_sha256": "d4edbd3b86d15215e745e3a1035e50466dc13064bd938abf58be6e4cbd266727",
   "scope": "本机测评＋共享历史原始报告；历史快照不跨批累加，分母和指标分别保留"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T21:12:12+08:00",
+  "generated_at": "2026-09-22T22:00:05+08:00",
   "runs": [
     {
       "id": "/home/yurui/zhangyurui/test-result/dp_imle_cfm_latest_two_scenes_100each_20260917_214355/bottle",
@@ -7572,6 +7572,100 @@
       "source_sha256": "ecff747856fe8e80fd7955a143ac9b28436fd992001cc0840b4aa71d7d18ab00",
       "additional_metrics": {
         "success10": 7
+      }
+    },
+    {
+      "id": "cfm_single300_two_scenes_100each_20260922_122932/bottle/cfm_bottle300_latest",
+      "batch": "cfm_single300_two_scenes_100each_20260922_122932",
+      "scene": "bottle",
+      "state": "已完成",
+      "groups": [
+        {
+          "scene": "bottle",
+          "model": "cfm_bottle300_latest",
+          "attempts": 100,
+          "valid": 97,
+          "successes": 45,
+          "invalid": 3,
+          "failure_observations": {
+            "无接触": 37,
+            "未达5cm": 11,
+            "持续不足": 4
+          },
+          "label": "cfm_bottle300_latest",
+          "mode": "report",
+          "method": "step_gt",
+          "planned": 100,
+          "rate": 0.4639175257731959,
+          "failures": {
+            "无接触": 37,
+            "未达5cm": 11,
+            "持续不足": 4
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "单一数据 · Bottle300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "ab98fe312f1f8967e71fe45f7c1191adb5decb10e8cca49a2130d77b92dce874"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-22T22:00:05+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      }
+    },
+    {
+      "id": "cfm_single300_two_scenes_100each_20260922_122932/box/cfm_box300_latest",
+      "batch": "cfm_single300_two_scenes_100each_20260922_122932",
+      "scene": "box",
+      "state": "已完成",
+      "groups": [
+        {
+          "scene": "box",
+          "model": "cfm_box300_latest",
+          "attempts": 100,
+          "valid": 98,
+          "successes": 56,
+          "invalid": 2,
+          "failure_observations": {
+            "持续不足": 5,
+            "无接触": 22,
+            "未达5cm": 15
+          },
+          "label": "cfm_box300_latest",
+          "mode": "report",
+          "method": "step_gt",
+          "planned": 100,
+          "rate": 0.5714285714285714,
+          "failures": {
+            "持续不足": 5,
+            "无接触": 22,
+            "未达5cm": 15
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "单一数据 · Box300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "afa7454cbc2e5b0867e60b3fe924b12df86e65b5c89f2d5e0f41593f5e82a16b"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-22T22:00:05+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
       }
     }
   ],
