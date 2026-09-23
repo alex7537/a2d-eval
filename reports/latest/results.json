@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T03:14:22+00:00",
+  "generated_at": "2026-09-23T14:58:50+08:00",
   "runs": [
     {
       "id": "/home/yurui/zhangyurui/test-result/dp_imle_cfm_latest_two_scenes_100each_20260917_214355/bottle",
@@ -7672,25 +7672,29 @@
       "id": "cfm_bottle654_latest_100_20260922_213810/bottle/cfm_bottle654_latest",
       "batch": "cfm_bottle654_latest_100_20260922_213810",
       "scene": "bottle",
-      "state": "异常停止／未完成",
+      "state": "已完成",
       "groups": [
         {
           "scene": "bottle",
           "model": "cfm_bottle654_latest",
-          "attempts": 4,
-          "valid": 3,
-          "successes": 2,
-          "invalid": 1,
+          "attempts": 100,
+          "valid": 95,
+          "successes": 54,
+          "invalid": 5,
           "failure_observations": {
-            "持续不足": 1
+            "持续不足": 7,
+            "无接触": 20,
+            "未达5cm": 14
           },
           "label": "cfm_bottle654_latest",
           "mode": "report",
           "method": "step_gt",
           "planned": 100,
-          "rate": 0.6666666666666666,
+          "rate": 0.5684210526315789,
           "failures": {
-            "持续不足": 1
+            "持续不足": 7,
+            "无接触": 20,
+            "未达5cm": 14
           },
           "failure_source": "与 AUTO_REPORT.md 同一次汇总",
           "training_data": "单一数据 · Bottle654",
@@ -7699,7 +7703,7 @@
         }
       ],
       "warnings": [],
-      "updated_at": "2026-09-22T22:12:14+08:00",
+      "updated_at": "2026-09-23T14:58:50+08:00",
       "protocol": {
         "horizon": 16,
         "max_steps": 300,
