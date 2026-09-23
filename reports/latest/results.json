@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T01:04:10+08:00",
+  "generated_at": "2026-09-24T01:49:45+08:00",
   "runs": [
     {
       "id": "/home/yurui/zhangyurui/test-result/dp_imle_cfm_latest_two_scenes_100each_20260917_214355/bottle",
@@ -7800,6 +7800,53 @@
       "updated_at": "2026-09-24T01:04:10+08:00",
       "protocol": {
         "horizon": 8,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": false,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      }
+    },
+    {
+      "id": "dp_multitask_bottle_denoise8_20260923_194750/bottle/dp_latest",
+      "batch": "dp_multitask_bottle_denoise8_20260923_194750",
+      "scene": "bottle",
+      "state": "已完成",
+      "groups": [
+        {
+          "scene": "bottle",
+          "model": "dp_latest",
+          "attempts": 30,
+          "valid": 28,
+          "successes": 17,
+          "invalid": 2,
+          "failure_observations": {
+            "未达5cm": 4,
+            "无接触": 6,
+            "持续不足": 1
+          },
+          "label": "dp_latest",
+          "mode": "report",
+          "method": "step_gt",
+          "planned": 30,
+          "rate": 0.6071428571428571,
+          "failures": {
+            "未达5cm": 4,
+            "无接触": 6,
+            "持续不足": 1
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box300＋Bottle300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "f1e537b09f9be8e5b83a387ff51f19345f47dc79087133328cfc0836c4771645"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-24T01:49:45+08:00",
+      "protocol": {
+        "horizon": 16,
         "max_steps": 300,
         "policy_seed": 42,
         "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
