@@ -2,7 +2,7 @@ name: Update W&B training snapshot
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '17 1 * * *' # Daily 09:17 Asia/Shanghai (GitHub schedules may be delayed)
 permissions:
   contents: write
 concurrency:
@@ -33,6 +33,11 @@ jobs:
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
+            lifecycle=$(python dashboard/compare_training_lifecycle.py dashboard/training_runs.json /tmp/training_runs.json)
+            if [ "$lifecycle" = "unchanged" ]; then
+              echo 'No new runs or lifecycle state changes; snapshot unchanged.'
+              exit 0
+            fi
             cp /tmp/training_runs.json dashboard/training_runs.json
             python dashboard/export_dashboard.py --evaluation-snapshot reports/latest/results.json --output reports/latest
             git add dashboard/training_runs.json reports/latest
