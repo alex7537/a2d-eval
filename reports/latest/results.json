@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T22:12:14+08:00",
+  "generated_at": "2026-09-23T03:14:22+00:00",
   "runs": [
     {
       "id": "/home/yurui/zhangyurui/test-result/dp_imle_cfm_latest_two_scenes_100each_20260917_214355/bottle",
@@ -7712,16 +7712,67 @@
       }
     }
   ],
-  "scope": "本机测评＋共享历史原始报告；历史快照不跨批累加，分母和指标分别保留",
+  "scope": "W&B训练快照＋已发布测评快照；不同协议不合并排名",
   "training": {
-    "generated_at": "2026-09-21T14:07:29+08:00",
+    "generated_at": "2026-09-23T03:14:21+00:00",
     "project": "z1135783608-psibot/a2d-flow-matching",
     "project_url": "https://wandb.ai/z1135783608-psibot/a2d-flow-matching",
     "runs": [
       {
+        "wandb_run_id": "4mwaf9xk",
+        "name": "cfm_bottle300_exact_subset_v3_spatial49_pro5000_100ep_scratch_seed42_20260921_224330",
+        "state": "finished",
+        "url": "https://wandb.ai/z1135783608-psibot/a2d-flow-matching/runs/4mwaf9xk",
+        "created_at": "2026-09-21T14:43:46Z",
+        "updated_at": "",
+        "group": "cfm-bottle300-exact-subset-v3-spatial49-pro5000-100ep",
+        "job_type": "train",
+        "tags": [
+          "100ep",
+          "bottle-only",
+          "cfm",
+          "deterministic-val",
+          "ema",
+          "exact-dedup",
+          "exact-multitask-subset",
+          "lift-oversample-2x",
+          "pro5000",
+          "rgb-proprio",
+          "scratch",
+          "seed42",
+          "spatial49",
+          "tail-padded",
+          "transition-oversample-2x",
+          "v3-hybrid-hand-target"
+        ],
+        "policy_type": "flow_matching",
+        "encoder": "vit_small_r26_s32_224",
+        "token_mode": "spatial",
+        "tokens_per_frame": 49,
+        "dataset": "a2d_v3_bottle300_from_multitask_seed42",
+        "batch_size": 32,
+        "current_epoch": 99,
+        "planned_epochs": 100,
+        "current_step": 189100,
+        "planned_steps": null,
+        "progress": 1.0,
+        "offline_metric": {
+          "label": "best val action MSE",
+          "value": 0.013057864956174104
+        },
+        "best_epoch": 37,
+        "latest_metrics": {
+          "train_loss": 0.008187368107870486,
+          "val_loss": 0.03971177976946257,
+          "val_action_mse": 0.01390464676066486,
+          "val_lift_action_mse": 0.0165323648721379
+        },
+        "checkpoints": []
+      },
+      {
         "wandb_run_id": "hrgc8b5p",
         "name": "cfm_box300_exact_subset_v3_spatial49_pro5000_100ep_scratch_seed42_20260921_123045",
-        "state": "running",
+        "state": "finished",
         "url": "https://wandb.ai/z1135783608-psibot/a2d-flow-matching/runs/hrgc8b5p",
         "created_at": "2026-09-21T04:30:59Z",
         "updated_at": "",
@@ -7751,21 +7802,21 @@
         "tokens_per_frame": 49,
         "dataset": "a2d_v3_box300_from_multitask_seed42",
         "batch_size": 32,
-        "current_epoch": 13,
+        "current_epoch": 99,
         "planned_epochs": 100,
-        "current_step": 26642,
+        "current_step": 190300,
         "planned_steps": null,
-        "progress": 0.14,
+        "progress": 1.0,
         "offline_metric": {
-          "label": "current val action MSE",
-          "value": 0.024173230451056862
+          "label": "best val action MSE",
+          "value": 0.02352924005750513
         },
-        "best_epoch": null,
+        "best_epoch": 9,
         "latest_metrics": {
-          "train_loss": 0.02871665283665648,
-          "val_loss": 0.04977488440151016,
-          "val_action_mse": 0.024173230451056862,
-          "val_lift_action_mse": 0.022800454196730713
+          "train_loss": 0.0067581897291024,
+          "val_loss": 0.08614297670449565,
+          "val_action_mse": 0.02512446138822759,
+          "val_lift_action_mse": 0.024672982332346174
         },
         "checkpoints": []
       },
