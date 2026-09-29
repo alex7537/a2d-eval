@@ -1,0 +1,288 @@
+{
+  "generated_at": "2026-09-29T16:34:22+08:00",
+  "runs": [
+    {
+      "id": "eval_v2_partial_archive_20260929_163422/bottle/dp_latest",
+      "batch": "eval_v2_partial_archive_20260929_163422",
+      "scene": "bottle",
+      "state": "异常停止／未完成",
+      "groups": [
+        {
+          "scene": "bottle",
+          "model": "dp_latest",
+          "attempts": 267,
+          "valid": 51,
+          "successes": 34,
+          "invalid": 216,
+          "failure_observations": {
+            "持续不足": 3,
+            "无接触": 8,
+            "未达5cm": 6
+          },
+          "label": "dp_latest",
+          "mode": "report",
+          "method": "eval2 固定初态 · 同步逐步RPC＋GT · 30Hz",
+          "planned": 268,
+          "rate": 0.6666666666666666,
+          "failures": {
+            "持续不足": 3,
+            "无接触": 8,
+            "未达5cm": 6
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box300＋Bottle300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "f1e537b09f9be8e5b83a387ff51f19345f47dc79087133328cfc0836c4771645"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-29T16:34:22+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": true,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      },
+      "archive_notes": "\n## 本次归档说明\n\n这是2026-09-29冻结的未完成快照，不代表600有效回合目标达成。共有206个有效回合。其余1309条为无效/中断占位记录，其中包含模型尚未执行就因其他模型或启动失败而补写的记录，不能理解为1309次实际抓取，也不纳入成功率。原始记录保留，不删除。\n\n协议：eval2固定初态恢复，H16/300动作/模型seed42，每动作4个120Hz物理步（同步30Hz）；查询/推理期间不推进。Box与Bottle分别统计。100布局含无效低位初态，补测循环使用布局，因此有效回合数不等于不同布局数。失败原因：显存不足导致加载失败，另有reset时服务连接关闭尚未解决。当前原监督器保持不动，本文件只归档截至时间的结果。\n"
+    },
+    {
+      "id": "eval_v2_partial_archive_20260929_163422/bottle/imle_latest",
+      "batch": "eval_v2_partial_archive_20260929_163422",
+      "scene": "bottle",
+      "state": "异常停止／未完成",
+      "groups": [
+        {
+          "scene": "bottle",
+          "model": "imle_latest",
+          "attempts": 267,
+          "valid": 51,
+          "successes": 39,
+          "invalid": 216,
+          "failure_observations": {
+            "持续不足": 5,
+            "无接触": 3,
+            "未达5cm": 4
+          },
+          "label": "imle_latest",
+          "mode": "report",
+          "method": "eval2 固定初态 · 同步逐步RPC＋GT · 30Hz",
+          "planned": 268,
+          "rate": 0.7647058823529411,
+          "failures": {
+            "持续不足": 5,
+            "无接触": 3,
+            "未达5cm": 4
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box300＋Bottle300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "13d6db49752a89dfdab93ee77481835300ac412b2b37fd142b27951d028ad3b7"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-29T16:34:22+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": true,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      },
+      "archive_notes": "\n## 本次归档说明\n\n这是2026-09-29冻结的未完成快照，不代表600有效回合目标达成。共有206个有效回合。其余1309条为无效/中断占位记录，其中包含模型尚未执行就因其他模型或启动失败而补写的记录，不能理解为1309次实际抓取，也不纳入成功率。原始记录保留，不删除。\n\n协议：eval2固定初态恢复，H16/300动作/模型seed42，每动作4个120Hz物理步（同步30Hz）；查询/推理期间不推进。Box与Bottle分别统计。100布局含无效低位初态，补测循环使用布局，因此有效回合数不等于不同布局数。失败原因：显存不足导致加载失败，另有reset时服务连接关闭尚未解决。当前原监督器保持不动，本文件只归档截至时间的结果。\n"
+    },
+    {
+      "id": "eval_v2_partial_archive_20260929_163422/bottle/cfm_latest",
+      "batch": "eval_v2_partial_archive_20260929_163422",
+      "scene": "bottle",
+      "state": "异常停止／未完成",
+      "groups": [
+        {
+          "scene": "bottle",
+          "model": "cfm_latest",
+          "attempts": 267,
+          "valid": 51,
+          "successes": 30,
+          "invalid": 216,
+          "failure_observations": {
+            "无接触": 13,
+            "未达5cm": 7,
+            "持续不足": 1
+          },
+          "label": "cfm_latest",
+          "mode": "report",
+          "method": "eval2 固定初态 · 同步逐步RPC＋GT · 30Hz",
+          "planned": 268,
+          "rate": 0.5882352941176471,
+          "failures": {
+            "无接触": 13,
+            "未达5cm": 7,
+            "持续不足": 1
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box300＋Bottle300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-29T16:34:22+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": true,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      },
+      "archive_notes": "\n## 本次归档说明\n\n这是2026-09-29冻结的未完成快照，不代表600有效回合目标达成。共有206个有效回合。其余1309条为无效/中断占位记录，其中包含模型尚未执行就因其他模型或启动失败而补写的记录，不能理解为1309次实际抓取，也不纳入成功率。原始记录保留，不删除。\n\n协议：eval2固定初态恢复，H16/300动作/模型seed42，每动作4个120Hz物理步（同步30Hz）；查询/推理期间不推进。Box与Bottle分别统计。100布局含无效低位初态，补测循环使用布局，因此有效回合数不等于不同布局数。失败原因：显存不足导致加载失败，另有reset时服务连接关闭尚未解决。当前原监督器保持不动，本文件只归档截至时间的结果。\n"
+    },
+    {
+      "id": "eval_v2_partial_archive_20260929_163422/box/dp_latest",
+      "batch": "eval_v2_partial_archive_20260929_163422",
+      "scene": "box",
+      "state": "异常停止／未完成",
+      "groups": [
+        {
+          "scene": "box",
+          "model": "dp_latest",
+          "attempts": 238,
+          "valid": 18,
+          "successes": 10,
+          "invalid": 220,
+          "failure_observations": {
+            "未达5cm": 1,
+            "无接触": 7
+          },
+          "label": "dp_latest",
+          "mode": "report",
+          "method": "eval2 固定初态 · 同步逐步RPC＋GT · 30Hz",
+          "planned": 239,
+          "rate": 0.5555555555555556,
+          "failures": {
+            "未达5cm": 1,
+            "无接触": 7
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box300＋Bottle300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "f1e537b09f9be8e5b83a387ff51f19345f47dc79087133328cfc0836c4771645"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-29T16:34:22+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": true,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      },
+      "archive_notes": "\n## 本次归档说明\n\n这是2026-09-29冻结的未完成快照，不代表600有效回合目标达成。共有206个有效回合。其余1309条为无效/中断占位记录，其中包含模型尚未执行就因其他模型或启动失败而补写的记录，不能理解为1309次实际抓取，也不纳入成功率。原始记录保留，不删除。\n\n协议：eval2固定初态恢复，H16/300动作/模型seed42，每动作4个120Hz物理步（同步30Hz）；查询/推理期间不推进。Box与Bottle分别统计。100布局含无效低位初态，补测循环使用布局，因此有效回合数不等于不同布局数。失败原因：显存不足导致加载失败，另有reset时服务连接关闭尚未解决。当前原监督器保持不动，本文件只归档截至时间的结果。\n"
+    },
+    {
+      "id": "eval_v2_partial_archive_20260929_163422/box/imle_latest",
+      "batch": "eval_v2_partial_archive_20260929_163422",
+      "scene": "box",
+      "state": "异常停止／未完成",
+      "groups": [
+        {
+          "scene": "box",
+          "model": "imle_latest",
+          "attempts": 238,
+          "valid": 18,
+          "successes": 12,
+          "invalid": 220,
+          "failure_observations": {
+            "未达5cm": 4,
+            "无接触": 2
+          },
+          "label": "imle_latest",
+          "mode": "report",
+          "method": "eval2 固定初态 · 同步逐步RPC＋GT · 30Hz",
+          "planned": 239,
+          "rate": 0.6666666666666666,
+          "failures": {
+            "未达5cm": 4,
+            "无接触": 2
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box300＋Bottle300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "13d6db49752a89dfdab93ee77481835300ac412b2b37fd142b27951d028ad3b7"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-29T16:34:22+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": true,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      },
+      "archive_notes": "\n## 本次归档说明\n\n这是2026-09-29冻结的未完成快照，不代表600有效回合目标达成。共有206个有效回合。其余1309条为无效/中断占位记录，其中包含模型尚未执行就因其他模型或启动失败而补写的记录，不能理解为1309次实际抓取，也不纳入成功率。原始记录保留，不删除。\n\n协议：eval2固定初态恢复，H16/300动作/模型seed42，每动作4个120Hz物理步（同步30Hz）；查询/推理期间不推进。Box与Bottle分别统计。100布局含无效低位初态，补测循环使用布局，因此有效回合数不等于不同布局数。失败原因：显存不足导致加载失败，另有reset时服务连接关闭尚未解决。当前原监督器保持不动，本文件只归档截至时间的结果。\n"
+    },
+    {
+      "id": "eval_v2_partial_archive_20260929_163422/box/cfm_latest",
+      "batch": "eval_v2_partial_archive_20260929_163422",
+      "scene": "box",
+      "state": "异常停止／未完成",
+      "groups": [
+        {
+          "scene": "box",
+          "model": "cfm_latest",
+          "attempts": 238,
+          "valid": 17,
+          "successes": 12,
+          "invalid": 221,
+          "failure_observations": {
+            "未达5cm": 1,
+            "无接触": 4
+          },
+          "label": "cfm_latest",
+          "mode": "report",
+          "method": "eval2 固定初态 · 同步逐步RPC＋GT · 30Hz",
+          "planned": 239,
+          "rate": 0.7058823529411765,
+          "failures": {
+            "未达5cm": 1,
+            "无接触": 4
+          },
+          "failure_source": "与 AUTO_REPORT.md 同一次汇总",
+          "training_data": "混合数据 · Box300＋Bottle300",
+          "training_data_source": "冻结 plan.json；缺失不推断",
+          "sha256": "fb3fb5ce87d7e9294aead49f03054362bb557ee9c2f97986645a0b46691a4117"
+        }
+      ],
+      "warnings": [],
+      "updated_at": "2026-09-29T16:34:22+08:00",
+      "protocol": {
+        "horizon": 16,
+        "max_steps": 300,
+        "policy_seed": 42,
+        "metric": "ever lift>=0.05m and thumb + two other fingers >1e-4N for 5 action observations; report diagnostic, not fixed duration",
+        "layout_replay": true,
+        "limitations": [
+          "静态归档；执行模式按原报告汇总，不代表逐模式对照"
+        ]
+      },
+      "archive_notes": "\n## 本次归档说明\n\n这是2026-09-29冻结的未完成快照，不代表600有效回合目标达成。共有206个有效回合。其余1309条为无效/中断占位记录，其中包含模型尚未执行就因其他模型或启动失败而补写的记录，不能理解为1309次实际抓取，也不纳入成功率。原始记录保留，不删除。\n\n协议：eval2固定初态恢复，H16/300动作/模型seed42，每动作4个120Hz物理步（同步30Hz）；查询/推理期间不推进。Box与Bottle分别统计。100布局含无效低位初态，补测循环使用布局，因此有效回合数不等于不同布局数。失败原因：显存不足导致加载失败，另有reset时服务连接关闭尚未解决。当前原监督器保持不动，本文件只归档截至时间的结果。\n"
+    }
+  ],
+  "scope": "静态结果快照 · 与随附报告一致"
+}
